@@ -16,7 +16,7 @@ services:
           $$_SERVER['HTTP_HOST'] = $$_SERVER['HTTP_X_FORWARDED_HOST'];
         }
     volumes:
-      - ../:/var/www/html/wp-content/plugins/wp-passkey
+      - ../:/var/www/html/wp-content/plugins/wp-reverse-proxy
 
   db:
     image: mariadb
